@@ -1,0 +1,24 @@
+.article_content
+    .article_header
+        img(src='./img/article_icon.png')
+        h4
+            span.headline
+                b TITLE :
+            |   <%- model.title %>
+        h4
+            span.headline
+                b AUTHOR :
+            |   <%- model.author.firstName %> <%- model.author.lastName %>
+        h4
+            span.headline
+                b DATE :
+            |   UNKNOWN
+    .article_text
+        p.bla   <%- model.content %>
+        .article_bottom
+            button.shower READ MORE
+            button.hider READ LESS
+            i.glyphicon.glyphicon-edit.editArticle
+            i.glyphicon.glyphicon-trash.deleteArticle
+
+

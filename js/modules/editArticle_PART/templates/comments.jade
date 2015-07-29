@@ -1,0 +1,23 @@
+.form-group
+    label(for='title') *TITLE:
+    textarea#title.form-control(rows='1') <%- model.title %>
+.form-group
+    label(for='author') *AUTHOR:
+    textarea#author.form-control(rows='1') <%- model.author.firstName %> <%- model.author.lastName %>
+.form-group
+    label(for='content') *CONTENT:
+    textarea#content.form-control(rows='5') <%- model.content %>
+input(type='button', value='SAVE' ,id="SaveArticleButton")
+hr
+
+br
+br
+label(for='comments') *LIST OF COMMENTS :
+#comments
+
+br
+.addCommentContainer
+    label LEAVE A COMMENT BELOW :
+    textarea#comment(name='comment').form-control(rows='3')
+    //textarea#comment(name='comment')
+    input(type='button', value='ADD' ,id="AddCommentButton")

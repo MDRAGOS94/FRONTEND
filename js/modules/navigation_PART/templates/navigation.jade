@@ -1,0 +1,23 @@
+.navigation-content
+	nav.navbar.navbar-inverse
+		.container
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+			.collapse.navbar-collapse
+				ul.nav.navbar-nav
+					li.active
+						a(href='#articlesFinal') HOME
+					li
+						a(href='#postArticle') POST_ARTICLE
+				.col-sm-3.col-md-3.pull-left
+					form.navbar-form(role='search')
+						.input-group
+							input.form-control(type='text', placeholder='SEARCH : ', name='q')
+							.input-group-btn
+								button.btn.btn-default(type='submit')
+									i.glyphicon.glyphicon-search
+
+
